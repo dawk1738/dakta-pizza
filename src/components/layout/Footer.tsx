@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
-
 export function Footer() {
-  return (
-    <footer className="bg-card border-t border-border mt-16">
+  return <footer className="bg-card border-t border-border mt-16">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
@@ -50,9 +48,7 @@ export function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
-                <a href="tel:+254700000000" className="text-muted-foreground hover:text-foreground transition-colors">
-                  +254 700 000 000
-                </a>
+                <a href="tel:+254700000000" className="text-muted-foreground hover:text-foreground transition-colors">+254 717480207</a>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4" />
@@ -92,6 +88,5 @@ export function Footer() {
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 }
